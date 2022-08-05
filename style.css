@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat', sans-serif;
+    transition: all .2s linear;
+    outline: none;
+}
+
+body{
+    background-color: #eee;
+}
+
+.container{
+    text-transform: capitalize;
+    text-align: center;
+    padding: 25px 10%;
+}
+
+
+.container h1{
+    padding: 25px;
+    font-size: 30px;
+}
+
+
+.container .search-box{
+    width: 600px;
+    padding: 12px 15px;
+    border: 3px solid #000;
+    font-size: 20px;
+}
+
+
+.container .image-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+    
+}
+
+.container .image-container .image{
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+    border: 2px solid #000;
+    width: 350px;
+    border-radius: 5px;
+    animation: fadeIn .2s linear;
+}
+
+@keyframes fadeIn{
+    0%{
+        transform: scale(.5) translateY(-10px);
+        opacity: 0;
+    }
+}
+
+.container .image-container .image img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.container .image-container h3{
+    font-size: 20px;
+}
+
+.footer{
+    padding-top: 30px;
+    font-size: 30px;
+    border-top: 1px solid#000;
+    margin-top: 30px;
+}
+
+@media (max-width:768px) {
+    .container .search-box{
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width:450px) {
+    .container{
+        padding: 25px 20px;
+    }
+    .container .image-container .image{
+        width: 100%;
+    }
+
+    
+.footer{
+    font-size: 20px;
+}
+
+}
